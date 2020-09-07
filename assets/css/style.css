@@ -1,0 +1,94 @@
+.container {
+    height: 100vh;
+    position: absolute;
+}
+
+
+.text-home {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    
+    margin: 17% 0 0 13vw;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 167px;
+    letter-spacing: 0.06em;
+}
+
+.text-home h1 {
+    width: 350px;
+}
+
+.red {
+    color: var(--color-primary);
+}
+
+.img-home {
+    z-index: -1;
+    height: 1000px;
+    top: -15%;
+    right: 0;
+    bottom: 0;
+    left: 40%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-image: url(../img/blackwthite.jpg);
+}
+
+.about:after{
+    content:"Hello. ";
+    transition: 0.5s;
+}
+.about:hover:after{
+    padding-left: 50px;
+    content:"About ";
+    cursor: pointer;
+}
+.work:after{
+    content:"I am ";
+    transition: 0.5s;
+}
+.work:hover:after{
+    padding-left: 50px;
+    content:"Work ";
+    cursor: pointer;
+}
+.contact:after{
+    content:"Luiz";
+    transition: 0.5s;
+}
+.contact:hover:after{
+    padding-left: 50px;
+    content: "contact";
+    cursor: pointer;
+}
+
+.tap {
+    display: none;
+}
+
+@media(max-width: 880px) {
+    .text-home {
+        font-size: 90px;
+        line-height: 110px;
+
+    }
+    .img-home {
+        left: -3%;
+    }
+    .tap {
+        width: 200px;
+        display: flex;
+        text-align: center;
+        padding: 30% 0 0 10%;
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 17px;
+        line-height: 25px;
+        letter-spacing: 0.24em;
+    }
+}

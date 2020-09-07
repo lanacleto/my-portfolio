@@ -1,0 +1,60 @@
+:root {
+    --color-background: #000;
+    --color-primary-lighter: #ff9393;
+    --color-primary-light: #ff4747;
+    --color-primary: #FF0000;
+    --color-primary-dark: #ff0000b0;
+    --color-primary-darker: #ff000059;
+    --color-secondary: #ffffff;
+    --color-secondary-dark: #3131318f;
+    font-size: 62.5%;
+}
+
+body {
+    color: #fff;
+    background-color: var(--color-background);
+}
+h1::selection {
+    color: lightblue;
+    background-color: var(--color-secondary-dark);
+}
+p::selection {
+    color: lightblue;
+    background-color: var(--color-secondary-dark);
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
+
+}
+a:link
+{
+    color: #fff;
+    text-decoration:none;
+}
+
+/*Scroll bar nav*/
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+    background:rgb(0, 0, 0);    
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(80, 71, 71, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(179, 167, 167, 0.4); 
+}
