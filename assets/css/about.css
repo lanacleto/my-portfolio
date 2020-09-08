@@ -19,6 +19,21 @@
     background-image: url(../img/67760622_2275241809363191_1640347335756087296_o.jpg);
 }
 
+.nav-a a::after {
+    position: fixed;
+    font-size: 20px;
+    top: 5%;
+    transition: 0.2s;
+    right: 10%;
+    content: 'back.';
+    
+}
+.nav-a a:hover::after {
+    content: 'back.home';
+    right: 7%;
+
+}
+
 
 .text-about {
     
@@ -84,4 +99,34 @@
     font-size: 210px;
     line-height: 601px;
     letter-spacing: 0.535em;
+}
+
+
+@media(max-width: 880px) {
+    #about-home p{
+        padding-top: 50%;
+        width: 400px;
+    }
+    .text-about {
+        width: 475px;
+    }
+    .about-me-text h1 {
+        padding-top: 140%;
+    }
+    .back-about {
+        font-size: 180px;
+        margin-left: -50px;
+        letter-spacing: 0;
+        margin-top: 100px;
+    }
+    .about-me-text {
+        width: 80%;
+        padding-left: 10%;
+    }
+    .img-about {
+        left: 0;
+        width: 90%;
+        height: 70%;
+        background-size: 130%;
+    }
 }
