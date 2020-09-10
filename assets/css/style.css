@@ -63,7 +63,7 @@
 }
 .contact:hover:after{
     padding-left: 50px;
-    content: "contact";
+    content: "Contact";
     cursor: pointer;
 }
 
