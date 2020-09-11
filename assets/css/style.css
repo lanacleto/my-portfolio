@@ -5,11 +5,7 @@
 
 
 .text-home {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    
+
     margin: 17% 0 0 13vw;
     font-family: Poppins;
     font-style: normal;
